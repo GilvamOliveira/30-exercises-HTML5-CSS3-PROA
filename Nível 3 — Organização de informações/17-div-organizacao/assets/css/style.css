@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #2c3e50;
+}
+
+.cabecalho {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu {
+    background-color: #2c3e50;
+    padding: 10px 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Desafio: container que organiza as duas divs de conteúdo
+           lado a lado usando Flexbox */
+.conteudo-wrapper {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.conteudo-principal {
+    flex: 2;
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.conteudo-lateral {
+    flex: 1;
+    background-color: #dfe6e9;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.rodape {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
