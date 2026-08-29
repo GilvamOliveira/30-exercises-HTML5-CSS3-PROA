@@ -1,0 +1,49 @@
+.bloco {
+    display: inline-block;
+    width: 180px;
+    height: 100px;
+    margin: 8px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-family: Arial, sans-serif;
+    border-radius: 6px;
+}
+
+.b1 {
+    background-color: tomato;
+}
+
+.b2 {
+    background-color: dodgerblue;
+}
+
+.b3 {
+    background-color: #2ecc71;
+}
+
+.b4 {
+    background-color: #9b59b6;
+}
+
+.b5 {
+    background-color: rgb(255, 165, 0);
+}
+
+.b6 {
+    background-color: rgb(52, 73, 94);
+}
+
+.b7 {
+    background-color: rgba(231, 76, 60, 0.7);
+    color: #333;
+}
+
+.b8 {
+    background-color: rgba(41, 128, 185, 0.5);
+    color: #333;
+}
+
+.b9 {
+    background-color: hsl(280, 70%, 50%);
+}

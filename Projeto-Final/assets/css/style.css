@@ -1,0 +1,1247 @@
+/* ============================================================
+   ONG VERDE VIDA — style.css
+   Arquivo compartilhado por index.html, sobre.html e contato.html
+   ============================================================ */
+
+
+/* ============================================================
+   CONFIGURAÇÕES GERAIS
+   ============================================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    color: #2c3e50;
+
+    background-color: #f4f7f1;
+
+    line-height: 1.5;
+}
+
+
+/* ============================================================
+   TÍTULOS E LINKS
+   ============================================================ */
+
+h1 {
+    margin-top: 0;
+}
+
+h2 {
+    color: #1b4b33;
+
+    font-size: 32px;
+
+    margin-top: 0;
+}
+
+a {
+    color: #1b4b33;
+}
+
+
+/* ============================================================
+   CABEÇALHO
+   ============================================================ */
+
+.cabecalho {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color: #1b4b33;
+
+    padding: 15px 30px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+
+    position: relative;
+
+    z-index: 10;
+}
+
+
+/* Logo */
+
+#logo {
+    height: 45px;
+
+    width: auto;
+}
+
+
+/* Menu */
+
+.menu {
+    display: flex;
+
+    align-items: center;
+}
+
+.menu a {
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 25px;
+
+    font-weight: bold;
+
+    padding: 8px 0;
+
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #b8d9c5;
+}
+
+
+/* ============================================================
+   BANNER
+   ============================================================ */
+
+.banner {
+    position: relative;
+
+    text-align: center;
+
+    color: white;
+
+    overflow: hidden;
+}
+
+.banner img {
+    display: block;
+
+    width: 100%;
+
+    height: 320px;
+
+    object-fit: cover;
+
+    filter: brightness(65%);
+}
+
+
+/* Banner menor - usado em outras páginas */
+
+.banner-menor img {
+    height: 220px;
+}
+
+
+/* Texto do banner */
+
+.banner-texto {
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 90%;
+
+    max-width: 900px;
+}
+
+.banner-texto h1 {
+    font-size: 42px;
+
+    margin: 0 0 12px;
+
+    line-height: 1.2;
+
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+}
+
+.banner-texto p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ============================================================
+   CONTEÚDO PRINCIPAL
+   ============================================================ */
+
+.conteudo {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 50px 25px;
+}
+
+
+/* Parágrafos principais */
+
+.conteudo>p {
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: #52635c;
+}
+
+
+/* ============================================================
+   INTRODUÇÃO — PÁGINA INICIAL
+   ============================================================ */
+
+.introducao {
+    background-color: #eaf4ed;
+
+    border-left: 4px solid #2e8b68;
+
+    border-radius: 0 12px 12px 0;
+
+    padding: 22px 25px;
+
+    margin-bottom: 50px;
+}
+
+.introducao .etiqueta {
+    display: inline-block;
+
+    background-color: #d8ecdf;
+
+    color: #247653;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+}
+
+.introducao p {
+    margin: 0;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #52635c;
+}
+
+
+/* ============================================================
+   NOSSAS AÇÕES
+   ============================================================ */
+
+.acoes {
+    margin-bottom: 60px;
+}
+
+.acoes h2 {
+    margin-bottom: 25px;
+}
+
+.acoes-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+/* Card individual */
+
+.acao {
+    background-color: white;
+
+    border: 1px solid #dce9df;
+
+    border-radius: 14px;
+
+    padding: 25px;
+
+    box-shadow: 0 5px 18px rgba(27, 75, 51, 0.06);
+
+    transition: all 0.3s ease;
+}
+
+.acao:hover {
+    transform: translateY(-5px);
+
+    border-color: #8fbf9f;
+
+    box-shadow: 0 12px 25px rgba(27, 75, 51, 0.12);
+}
+
+
+/* Ícone */
+
+.acao-icone {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 50px;
+
+    height: 50px;
+
+    background-color: #e8f5e9;
+
+    border-radius: 12px;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+.acao h3 {
+    margin: 0 0 8px;
+
+    color: #1b4b33;
+
+    font-size: 18px;
+}
+
+.acao p {
+    margin: 0;
+
+    color: #64736d;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* ============================================================
+   MISSÃO
+   ============================================================ */
+
+.missao {
+    background-color: white;
+
+    border: 1px solid #dce9df;
+
+    border-left: 5px solid #2e8b68;
+
+    border-radius: 14px;
+
+    padding: 35px;
+
+    margin: 35px 0 60px;
+
+    box-shadow: 0 8px 25px rgba(27, 75, 51, 0.08);
+
+    transition: 0.3s ease;
+}
+
+.missao:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 12px 30px rgba(27, 75, 51, 0.12);
+}
+
+.etiqueta {
+    display: inline-block;
+
+    background-color: #e5f3eb;
+
+    color: #247653;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 12px;
+}
+
+.missao h2 {
+    margin: 5px 0 15px;
+
+    font-size: 30px;
+}
+
+.missao p {
+    margin: 0;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #52635c;
+}
+
+
+/* ============================================================
+   NOSSOS VALORES
+   ============================================================ */
+
+.valores {
+    margin-bottom: 65px;
+}
+
+.valores>h2 {
+    margin-bottom: 25px;
+}
+
+.valores-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+/* Card */
+
+.valor {
+    background-color: white;
+
+    border: 1px solid #dce9df;
+
+    border-radius: 14px;
+
+    padding: 25px;
+
+    box-shadow: 0 5px 18px rgba(27, 75, 51, 0.06);
+
+    transition: all 0.3s ease;
+}
+
+.valor:hover {
+    transform: translateY(-5px);
+
+    border-color: #8fbf9f;
+
+    box-shadow: 0 12px 25px rgba(27, 75, 51, 0.12);
+}
+
+
+/* Ícone */
+
+.icone {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 50px;
+
+    height: 50px;
+
+    background-color: #e8f5e9;
+
+    border-radius: 12px;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+.valor h3 {
+    color: #1b4b33;
+
+    margin: 0 0 8px;
+
+    font-size: 18px;
+}
+
+.valor p {
+    color: #64736d;
+
+    margin: 0;
+
+    line-height: 1.5;
+
+    font-size: 14px;
+}
+
+
+/* ============================================================
+   LINHA DO TEMPO
+   ============================================================ */
+
+.linha-tempo {
+    margin-bottom: 50px;
+}
+
+.linha-tempo>h2 {
+    margin-bottom: 30px;
+}
+
+.timeline {
+    position: relative;
+
+    padding-left: 30px;
+}
+
+
+/* Linha vertical */
+
+.timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 10px;
+
+    top: 10px;
+
+    bottom: 10px;
+
+    width: 3px;
+
+    background-color: #b8d9c5;
+}
+
+
+/* Evento */
+
+.evento {
+    position: relative;
+
+    display: flex;
+
+    gap: 25px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Bolinha */
+
+.evento::before {
+    content: "";
+
+    position: absolute;
+
+    left: -28px;
+
+    top: 18px;
+
+    width: 13px;
+
+    height: 13px;
+
+    background-color: #2e8b68;
+
+    border: 4px solid #e4f2e9;
+
+    border-radius: 50%;
+
+    z-index: 2;
+}
+
+
+/* Ano */
+
+.ano {
+    min-width: 70px;
+
+    padding-top: 18px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: #247653;
+}
+
+
+/* Conteúdo */
+
+.evento-conteudo {
+    flex: 1;
+
+    background-color: white;
+
+    border: 1px solid #dce9df;
+
+    border-radius: 12px;
+
+    padding: 18px 22px;
+
+    box-shadow: 0 4px 15px rgba(27, 75, 51, 0.05);
+
+    transition: 0.3s ease;
+}
+
+.evento-conteudo:hover {
+    transform: translateX(5px);
+
+    box-shadow: 0 8px 20px rgba(27, 75, 51, 0.10);
+}
+
+.evento-conteudo h3 {
+    margin: 0 0 7px;
+
+    color: #1b4b33;
+
+    font-size: 17px;
+}
+
+.evento-conteudo p {
+    margin: 0;
+
+    color: #64736d;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* ============================================================
+   TABELAS
+   ============================================================ */
+
+table {
+    border-collapse: collapse;
+
+    width: 100%;
+
+    margin: 15px 0;
+}
+
+th,
+td {
+    padding: 10px 12px;
+
+    text-align: left;
+
+    border: 1px solid #cddccf;
+}
+
+th {
+    background-color: #1b4b33;
+
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #e8f5e9;
+}
+
+
+/* ============================================================
+   TABELA — IMPACTO
+   ============================================================ */
+
+.impacto {
+    margin-bottom: 35px;
+}
+
+.impacto h2 {
+    margin-bottom: 25px;
+}
+
+.tabela-container {
+    background-color: white;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 18px rgba(27, 75, 51, 0.07);
+}
+
+.tabela-container table {
+    margin: 0;
+}
+
+.tabela-container th {
+    padding: 16px;
+
+    font-size: 15px;
+}
+
+.tabela-container td {
+    padding: 16px;
+
+    border-color: #dce9df;
+
+    color: #40554e;
+}
+
+.tabela-container tr:nth-child(even) {
+    background-color: #eef7f0;
+}
+
+.tabela-container tbody tr {
+    transition: 0.2s ease;
+}
+
+.tabela-container tbody tr:hover {
+    background-color: #e2f1e6;
+}
+
+
+/* ============================================================
+   LINKS
+   ============================================================ */
+
+.link-ods {
+    margin: 25px 0;
+}
+
+.link-ods a {
+    display: inline-block;
+
+    color: #1b4b33;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    border-bottom: 2px solid #8fbf9f;
+
+    padding-bottom: 3px;
+
+    transition: 0.3s ease;
+}
+
+.link-ods a:hover {
+    color: #2e8b68;
+
+    border-color: #2e8b68;
+}
+
+
+/* ============================================================
+   BOTÕES
+   ============================================================ */
+
+button {
+    background-color: #1b4b33;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 24px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    margin-top: 10px;
+
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #123723;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 15px rgba(27, 75, 51, 0.2);
+}
+
+
+/* ============================================================
+   BOTÃO — VER IMPACTO
+   ============================================================ */
+
+.impacto-botao {
+    margin-top: 30px;
+}
+
+.impacto-botao a {
+    display: inline-block;
+
+    background-color: #1b4b33;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 13px 25px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.impacto-botao a:hover {
+    background-color: #123723;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 15px rgba(27, 75, 51, 0.2);
+}
+
+
+/* ============================================================
+   CARD GENÉRICO
+   Mantido para o modo de leitura noturna
+   ============================================================ */
+
+.card {
+    background-color: white;
+
+    border: 1px solid #dce9df;
+
+    border-left: 5px solid #2e8b68;
+
+    border-radius: 14px;
+
+    margin: 35px 0;
+
+    padding: 25px;
+
+    box-shadow: 0 6px 20px rgba(27, 75, 51, 0.08);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #52635c;
+
+    line-height: 1.6;
+}
+
+
+/* ============================================================
+   MENSAGEM DE CONFIRMAÇÃO
+   ============================================================ */
+
+#mensagem-confirmacao {
+    font-weight: bold;
+
+    color: #1b4b33;
+}
+
+
+/* ============================================================
+   RODAPÉ
+   ============================================================ */
+
+.rodape {
+    background-color: #1b4b33;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+}
+
+.rodape p {
+    margin: 5px 0;
+}
+
+.rodape .creditos {
+    font-size: 13px;
+
+    color: #cddccf;
+
+    margin-top: 8px;
+}
+
+
+/* ============================================================
+   MODO ESCURO
+   ============================================================ */
+
+body.escuro {
+    background-color: #121212;
+
+    color: #e0e0e0;
+}
+
+
+/* Títulos */
+
+body.escuro h2 {
+    color: #8fbf9f;
+}
+
+
+/* Texto */
+
+body.escuro .conteudo>p {
+    color: #d0d8d3;
+}
+
+
+/* Introdução */
+
+body.escuro .introducao {
+    background-color: #1b2b22;
+
+    border-color: #3f7d58;
+}
+
+body.escuro .introducao p {
+    color: #d0d8d3;
+}
+
+body.escuro .introducao .etiqueta {
+    background-color: #263b2d;
+
+    color: #a8d4b7;
+}
+
+
+/* Missão */
+
+body.escuro .missao {
+    background-color: #1e1e1e;
+
+    border-color: #3f7d58;
+}
+
+body.escuro .missao p {
+    color: #d0d8d3;
+}
+
+
+/* Valores */
+
+body.escuro .valor {
+    background-color: #1e1e1e;
+
+    border-color: #3f7d58;
+}
+
+body.escuro .valor h3 {
+    color: #8fbf9f;
+}
+
+body.escuro .valor p {
+    color: #c0c8c3;
+}
+
+body.escuro .icone {
+    background-color: #263b2d;
+}
+
+
+/* Ações */
+
+body.escuro .acao {
+    background-color: #1e1e1e;
+
+    border-color: #3f7d58;
+}
+
+body.escuro .acao h3 {
+    color: #8fbf9f;
+}
+
+body.escuro .acao p {
+    color: #c0c8c3;
+}
+
+body.escuro .acao-icone {
+    background-color: #263b2d;
+}
+
+
+/* Timeline */
+
+body.escuro .timeline::before {
+    background-color: #3f7d58;
+}
+
+body.escuro .evento::before {
+    background-color: #4f9b6e;
+
+    border-color: #263b2d;
+}
+
+body.escuro .ano {
+    color: #8fbf9f;
+}
+
+body.escuro .evento-conteudo {
+    background-color: #1e1e1e;
+
+    border-color: #3f7d58;
+}
+
+body.escuro .evento-conteudo h3 {
+    color: #8fbf9f;
+}
+
+body.escuro .evento-conteudo p {
+    color: #c0c8c3;
+}
+
+
+/* Card */
+
+body.escuro .card {
+    background-color: #1e1e1e;
+
+    border-color: #3f7d58;
+}
+
+body.escuro .card p {
+    color: #c0c8c3;
+}
+
+
+/* Tabela */
+
+body.escuro table,
+body.escuro th,
+body.escuro td {
+    border-color: #3f7d58;
+}
+
+body.escuro th {
+    background-color: #1b4b33;
+}
+
+body.escuro tr:nth-child(even) {
+    background-color: #1a2e1a;
+}
+
+body.escuro .tabela-container {
+    background-color: #1e1e1e;
+}
+
+body.escuro .tabela-container td {
+    color: #d0d8d3;
+
+    border-color: #3f7d58;
+}
+
+body.escuro .tabela-container tr:nth-child(even) {
+    background-color: #1a2e1a;
+}
+
+body.escuro .tabela-container tbody tr:hover {
+    background-color: #263b2d;
+}
+
+
+/* Links */
+
+body.escuro a {
+    color: #8fbf9f;
+}
+
+body.escuro .link-ods a {
+    color: #8fbf9f;
+
+    border-color: #3f7d58;
+}
+
+
+/* ============================================================
+   RESPONSIVIDADE
+   ============================================================ */
+
+@media (max-width: 800px) {
+
+    .conteudo {
+        padding: 40px 20px;
+    }
+
+    .banner-texto h1 {
+        font-size: 34px;
+    }
+
+    .acoes-grid,
+    .valores-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* ============================================================
+   CELULAR
+   ============================================================ */
+
+@media (max-width: 600px) {
+
+    /* Cabeçalho */
+
+    .cabecalho {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 15px 20px;
+    }
+
+    .menu a {
+        margin: 0 8px;
+
+        font-size: 14px;
+    }
+
+
+    /* Banner */
+
+    .banner img {
+        height: 280px;
+    }
+
+    .banner-texto {
+        width: 90%;
+    }
+
+    .banner-texto h1 {
+        font-size: 28px;
+    }
+
+    .banner-texto p {
+        font-size: 15px;
+    }
+
+
+    /* Conteúdo */
+
+    .conteudo {
+        padding: 35px 18px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+
+    /* Introdução */
+
+    .introducao {
+        padding: 20px;
+
+        margin-bottom: 40px;
+    }
+
+    .introducao p {
+        font-size: 16px;
+    }
+
+
+    /* Ações */
+
+    .acoes-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Valores */
+
+    .valores-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Missão */
+
+    .missao {
+        padding: 25px;
+    }
+
+    .missao h2 {
+        font-size: 25px;
+    }
+
+    .missao p {
+        font-size: 16px;
+    }
+
+
+    /* Timeline */
+
+    .timeline {
+        padding-left: 30px;
+    }
+
+    .evento {
+        gap: 15px;
+    }
+
+    .ano {
+        min-width: 50px;
+
+        font-size: 16px;
+    }
+
+    .evento-conteudo {
+        padding: 16px;
+    }
+
+
+    /* Tabela */
+
+    .tabela-container {
+        overflow-x: auto;
+    }
+
+    .tabela-container table {
+        min-width: 650px;
+    }
+
+
+    /* Botões */
+
+    button {
+        width: 100%;
+    }
+
+    .impacto-botao a {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    /* Rodapé */
+
+    .rodape {
+        padding: 20px 15px;
+
+        font-size: 14px;
+    }
+
+}

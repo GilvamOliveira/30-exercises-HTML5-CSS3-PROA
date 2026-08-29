@@ -1,0 +1,31 @@
+/* Estrutura de uma regra CSS:
+   seletor {
+       propriedade: valor;
+   }
+   O "seletor" escolhe QUAL elemento será estilizado,
+   a "propriedade" define O QUE será alterado (cor, tamanho, etc.)
+   e o "valor" define COMO essa propriedade vai se comportar. */
+
+h1 {
+    color: #2c3e50;        /* cor do texto */
+    text-align: center;    /* alinhamento centralizado */
+    font-size: 32px;       /* tamanho da fonte */
+}
+
+/* h2 recebe uma cor diferente e uma linha inferior para se destacar */
+h2 {
+    color: #8e44ad;
+    border-bottom: 2px solid #8e44ad;
+    padding-bottom: 5px;
+}
+
+/* Todos os parágrafos da página recebem o mesmo estilo de base */
+p {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #444444;
+    margin: 10px 20px;
+    background-color: #f0f0f0;
+    padding: 8px;
+    border-radius: 5px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Uso de CSS e elementos básicos do HTML">
+    <meta name="keywords" content="HTML, CSS, elementos, tags">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/css.png" type="image/x-icon">
+
+    <title>Minha Primeira Estilização com CSS</title>
+</head>
+
+<body>
+    <h1>Bem-vindo(a) à minha página!</h1>
+
+    <p>Este parágrafo está estilizado usando um arquivo
+        <strong>CSS externo</strong>, conectado por meio da tag
+        &lt;link&gt; dentro do &lt;head&gt;.
+    </p>
+
+    <!-- Exemplo de CSS interno: só vale para esta página -->
+    <style>
+        h2 {
+            color: darkred;
+        }
+    </style>
+
+    <h2>Este título usa CSS interno</h2>
+
+    <!-- Exemplo de CSS inline: só vale para este elemento específico -->
+    <p style="color: green; font-weight: bold;">
+        Este parágrafo usa CSS inline (estilo escrito diretamente no
+        atributo style do elemento).
+    </p>
+
+    <p><strong>Diferenças:</strong> o CSS externo (style.css) é
+        reutilizável em várias páginas e mantém o código organizado;
+        o CSS interno (dentro de &lt;style&gt;) vale só para a página
+        atual; e o CSS inline vale só para o elemento onde foi escrito,
+        tendo a maior prioridade entre os três, porém deve ser evitado
+        em projetos maiores por dificultar a manutenção.</p>
+</body>
+
+</html>

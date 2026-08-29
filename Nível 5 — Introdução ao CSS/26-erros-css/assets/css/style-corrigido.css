@@ -1,0 +1,37 @@
+/* Versão corrigida do arquivo style-com-erros.css */
+
+h1 {
+    color: blue;
+    /* CORREÇÃO 1: adicionado o ; que faltava */
+    font-size: 28px;
+}
+
+.texto {
+    color: red;
+    /* CORREÇÃO 2: "colr" corrigido para "color" */
+    font-weight: bold;
+}
+
+.caixa {
+    background-color: #eeeeee;
+    padding: 10px;
+    border: 1px solid black;
+    /* CORREÇÃO 3: ; adicionado */
+}
+
+/* CORREÇÃO 4: chave de fechamento da .caixa adicionada */
+
+.rodape {
+    text-align: center;
+}
+
+#titulo-pagina {
+    font-size: 20px;
+    color: green;
+    /* CORREÇÃO 5: "verde" corrigido para "green" */
+}
+
+.destaque {
+    /* CORREÇÃO 6: chaves { } adicionadas ao redor da regra */
+    color: purple;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="ONG Verde Vida - ações de plantio de árvores e educação ambiental.">
+    <meta name="keywords" content="ONG, meio ambiente, plantio de árvores, projeto final">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <title>ONG Verde Vida | Início</title>
+</head>
+
+<body>
+
+    <!-- ===== CABEÇALHO (repetido nas 3 páginas, com o menu) ===== -->
+    <div class="cabecalho">
+        <img src="assets/img/logo.png" id="logo" alt="Logo da ONG Verde Vida">
+        <nav class="menu">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </div>
+
+    <!-- ===== BANNER DE DESTAQUE ===== -->
+    <div class="banner">
+        <img src="assets/img/banner.jpg"
+            alt="Ilustração de uma floresta ao entardecer, com o sol se pondo no horizonte">
+        <div class="banner-texto">
+            <h1>Juntos por um mundo mais verde</h1>
+            <p>Plantamos árvores e cultivamos educação ambiental na nossa comunidade.</p>
+        </div>
+    </div>
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <div class="introducao">
+        <span class="etiqueta">SOBRE A VERDE VIDA</span>
+
+        <p>
+            Somos uma organização sem fins lucrativos dedicada à
+            preservação ambiental<br>
+            e à educação sustentável em nossa
+            comunidade desde 2020.
+        </p>
+
+        <section class="acoes">
+
+            <h2>Nossas ações</h2>
+
+            <div class="acoes-grid">
+
+                <div class="acao">
+                    <span class="acao-icone">🌱</span>
+                    <h3>Plantio de árvores</h3>
+                    <p>
+                        Plantamos árvores em áreas urbanas para contribuir
+                        com cidades mais verdes e sustentáveis.
+                    </p>
+                </div>
+
+                <div class="acao">
+                    <span class="acao-icone">♻️</span>
+                    <h3>Reciclagem</h3>
+                    <p>
+                        Realizamos oficinas de reciclagem e educação
+                        ambiental para escolas.
+                    </p>
+                </div>
+
+                <div class="acao">
+                    <span class="acao-icone">🧹</span>
+                    <h3>Limpeza comunitária</h3>
+                    <p>
+                        Organizamos mutirões de limpeza em praças,
+                        rios e espaços públicos.
+                    </p>
+                </div>
+
+                <div class="acao">
+                    <span class="acao-icone">🌎</span>
+                    <h3>Conscientização ambiental</h3>
+                    <p>
+                        Promovemos campanhas para incentivar atitudes
+                        mais sustentáveis na comunidade.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Tabela com os resultados da ONG -->
+        <section class="impacto">
+
+            <h2 id="secao-numeros">Nosso impacto em números</h2>
+
+            <div class="tabela-container">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ano</th>
+                            <th>Árvores plantadas</th>
+                            <th>Voluntários</th>
+                            <th>Escolas atendidas</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>2024</td>
+                            <td>1.200</td>
+                            <td>85</td>
+                            <td>12</td>
+                        </tr>
+
+                        <tr>
+                            <td>2025</td>
+                            <td>2.450</td>
+                            <td>140</td>
+                            <td>21</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- Link externo (abre em nova aba) e link interno (âncora) -->
+        <div class="link-ods">
+            <a href="https://www.un.org/sustainabledevelopment/pt/" target="_blank" rel="noopener noreferrer"
+                title="Conheça os Objetivos de Desenvolvimento Sustentável da ONU">
+                Conheça os Objetivos de Desenvolvimento Sustentável da ONU →
+            </a>
+        </div>
+
+        <!-- Botão simples: rola a página até a tabela de números -->
+        <button type="button" onclick="document.getElementById('secao-numeros').scrollIntoView()">
+            Ver nosso impacto
+        </button>
+
+        <!-- ===== DESAFIO: INTERAÇÃO COM JAVASCRIPT ===== -->
+        <div class="card">
+            <h2>Modo de leitura noturna</h2>
+            <p>Clique no botão abaixo para alternar entre o tema claro
+                e o tema escuro do site.</p>
+            <button type="button" id="botao-modo-escuro" onclick="alternarModoEscuro()">
+                Ativar modo escuro
+            </button>
+        </div>
+
+    </div>
+
+    <!-- ===== RODAPÉ ===== -->
+    <div class="rodape">
+        <p>&copy; 2026 ONG Verde Vida. Todos os direitos reservados.</p>
+        <p class="creditos">Projeto acadêmico desenvolvido por Gilvam J. T. de Oliveira.</p>
+    </div>
+
+    <!-- JavaScript do desafio: alterna uma classe no body e atualiza o texto do botão -->
+    <script>
+        function alternarModoEscuro() {
+            const corpo = document.body;
+            const botao = document.getElementById("botao-modo-escuro");
+
+            // classList.toggle adiciona a classe se ela não existir,
+            // e remove se ela já existir
+            corpo.classList.toggle("escuro");
+
+            if (corpo.classList.contains("escuro")) {
+                botao.textContent = "Desativar modo escuro";
+            } else {
+                botao.textContent = "Ativar modo escuro";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
